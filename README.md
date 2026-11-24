@@ -188,18 +188,6 @@ instrument flute
 phrase intro { Sa Ri Ga Ma Pa }
 repeat 2 { play intro }
 ```
-
----
-
-## 📚 Project Presentation & Team
-
-- **Course**: COMPILER DESIGN – 1407
-- **Guided By**: Dr. C. Anitha
-- **Presented By**:
-  - S. Sha He Zaman
-  - P. Hirushikesan
-  - B. Revanth
-
 ---
 
 ## 📄 License
