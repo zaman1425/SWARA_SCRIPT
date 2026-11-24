@@ -33,7 +33,11 @@ type TabId = typeof TABS[number]['id'];
 
 const DEFAULT_CODE = SAMPLE_PROGRAMS[0].code;
 
-export default function SwaraScriptIDE() {
+interface SwaraScriptIDEProps {
+  onReturnHome?: () => void;
+}
+
+export default function SwaraScriptIDE({ onReturnHome }: SwaraScriptIDEProps = {}) {
   const [code, setCode] = useState(DEFAULT_CODE);
   const [activeTab, setActiveTab] = useState<TabId>('editor');
   const [result, setResult] = useState<CompilationResult | null>(null);
@@ -174,6 +178,18 @@ export default function SwaraScriptIDE() {
 
           {/* Quick Actions & Sample Picker */}
           <div className="flex flex-wrap items-center gap-3">
+            {/* Return to Welcome Hall Button */}
+            {onReturnHome && (
+              <button
+                onClick={onReturnHome}
+                className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-black/60 hover:bg-amber-950/70 text-amber-200 border border-amber-800/60 hover:border-amber-400 transition-all flex items-center gap-1.5"
+                title="Return to the Grand Indian Welcome Screen"
+              >
+                <span>🏛️</span>
+                <span>Welcome Hall</span>
+              </button>
+            )}
+
             {/* Tanpura Drone Quick Header Toggle */}
             <button
               onClick={handleToggleTanpura}
