@@ -76,10 +76,10 @@ export default function IndianWelcomeHero({ onEnter }: IndianWelcomeHeroProps) {
           {/* 12 Outer Petals */}
           {Array.from({ length: 12 }).map((_, i) => {
             const angle = (i * 30 * Math.PI) / 180;
-            const x1 = 200 + 130 * Math.cos(angle);
-            const y1 = 200 + 130 * Math.sin(angle);
-            const x2 = 200 + 190 * Math.cos(angle + 0.25);
-            const y2 = 200 + 190 * Math.sin(angle + 0.25);
+            const x1 = Math.round(200 + 130 * Math.cos(angle));
+            const y1 = Math.round(200 + 130 * Math.sin(angle));
+            const x2 = Math.round(200 + 190 * Math.cos(angle + 0.25));
+            const y2 = Math.round(200 + 190 * Math.sin(angle + 0.25));
             return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="currentColor" />;
           })}
           {/* Star Polygons */}
