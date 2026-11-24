@@ -121,7 +121,7 @@ export function generateEvents(
           'whole': 4, 'half': 2, 'quarter': 1, 'eighth': 0.5,
           'sixteenth': 0.25, 'dotted': 1.5,
         };
-        defaultDuration = durationMap[val] ?? parseFloat(val) || 1;
+        defaultDuration = durationMap[val] ?? (parseFloat(val) || 1);
         break;
       }
 

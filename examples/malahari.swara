@@ -1,0 +1,20 @@
+// Sri Gananatha / Lambodara Lakumikara
+// Raga: Malahari (Janya of Mayamalavagowla)
+// Tala: Roopaka
+tempo 96
+instrument veena
+
+phrase pallavi {
+  Ma Pa Dha Sa 2
+  Dha Pa Ma Ga Ri Sa
+}
+
+phrase charanam {
+  Sa Ri Ma Ga Ri Sa
+  Ri Ma Pa Dha 2
+  Dha Pa Ma Ga Ri Sa
+}
+
+play pallavi
+rest 1
+repeat 2 { play charanam }

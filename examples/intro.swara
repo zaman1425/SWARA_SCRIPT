@@ -1,0 +1,5 @@
+// Example SwaraScript program from Slide 2
+tempo 120
+instrument flute
+phrase intro { Sa Ri Ga Ma Pa }
+repeat 2 { play intro }

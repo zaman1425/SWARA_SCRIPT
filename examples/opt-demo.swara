@@ -1,0 +1,9 @@
+// Optimization Demonstration (Slide 7)
+// Demonstrates consecutive rest merging
+tempo 120
+instrument piano
+
+rest 0.5
+rest 0.5
+C4 0.5
+E4 0.5
