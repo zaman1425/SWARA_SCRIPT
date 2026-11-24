@@ -121,7 +121,7 @@ export default function SwaraScriptIDE({ onReturnHome }: SwaraScriptIDEProps = {
     const lines = result.optimizeResult.events.map(e =>
       `t=${e.startTime.toFixed(3)}s  ${e.type.padEnd(5)}  pitch=${(e.pitch || 'REST').padEnd(6)}  dur=${e.duration.toFixed(3)}s  midi=${String(e.midiNote || '-').padStart(3)}  freq=${(e.frequency ? e.frequency.toFixed(2) + 'Hz' : '-').padEnd(10)}  inst=${e.instrument}`
     );
-    const text = `=================================================================\nSWARASCRIPT INTERMEDIATE EVENT CODE GENERATION REPORT\nCOMPILER DESIGN 1407 - GUIDED BY DR. C. ANITHA\n=================================================================\n\n${lines.join('\n')}\n\nOPTIMIZATION SUMMARY:\n- Original Events: ${result.optimizeResult.report.originalCount}\n- Optimized Events: ${result.optimizeResult.report.optimizedCount}\n- Event Count Reduction: ${result.optimizeResult.report.reductionPercent}%\n- Music Duration: ${result.optimizeResult.report.optimizedDuration.toFixed(3)}s (Length Invariance Preserved)`;
+    const text = `=================================================================\nSWARASCRIPT INTERMEDIATE EVENT CODE GENERATION REPORT\n=================================================================\n\n${lines.join('\n')}\n\nOPTIMIZATION SUMMARY:\n- Original Events: ${result.optimizeResult.report.originalCount}\n- Optimized Events: ${result.optimizeResult.report.optimizedCount}\n- Event Count Reduction: ${result.optimizeResult.report.reductionPercent}%\n- Music Duration: ${result.optimizeResult.report.optimizedDuration.toFixed(3)}s (Length Invariance Preserved)`;
     const blob = new Blob([text], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -437,17 +437,20 @@ export default function SwaraScriptIDE({ onReturnHome }: SwaraScriptIDEProps = {
               </div>
             </div>
 
-            {/* Project Presentation Credits */}
+            {/* Audio Engine Status Card */}
             <div className="indian-card rounded-2xl p-5 border border-amber-900/40 text-xs">
-              <div className="text-[11px] uppercase tracking-wider font-semibold text-amber-400/80 mb-2">
-                Compiler Design – 1407
+              <div className="text-[11px] uppercase tracking-wider font-semibold text-amber-400 mb-2 flex items-center justify-between">
+                <span>🪕 Audio Synthesis Engine</span>
+                <span className="text-emerald-400 font-mono text-[10px]">● Online</span>
               </div>
               <div className="font-serif font-bold text-amber-100 text-sm">
-                SwaraScript Research Project
+                SwaraScript Web Audio System
               </div>
-              <div className="text-amber-200/70 mt-2 space-y-1">
-                <div><strong>Presented by:</strong> S. Sha He Zaman, P. Hirushikesan, B. Revanth</div>
-                <div><strong>Guided by:</strong> Dr. C. Anitha</div>
+              <div className="text-amber-200/70 mt-2 space-y-1 font-mono text-[11px]">
+                <div>• Synthesis: Multi-harmonic Oscillators</div>
+                <div>• Envelopes: Custom ADSR per instrument</div>
+                <div>• Drone: Continuous Tambura Shruti Box</div>
+                <div>• Export: Standard Type 0 MIDI (.mid)</div>
               </div>
             </div>
           </div>

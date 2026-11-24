@@ -21,7 +21,7 @@ if (args.length === 0 || args.includes('-h') || args.includes('--help')) {
   console.log(`
 ╔═════════════════════════════════════════════════════════════════╗
 ║   SwaraScript Compiler CLI - Domain-Specific Music Language   ║
-║   Compiler Design 1407 · Guided by Dr. C. Anitha                ║
+║   Interactive Event Code Generator & Web Audio Synthesizer    ║
 ╚═════════════════════════════════════════════════════════════════╝
 
 Usage:

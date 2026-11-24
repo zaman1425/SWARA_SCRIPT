@@ -10,7 +10,7 @@ export default function GrammarDocsView() {
           📖 SwaraScript Language Specification & Architecture
         </h3>
         <p className="text-sm text-gray-400">
-          COMPILER DESIGN – 1407 · Guided by Dr. C. Anitha · Presented by S. Sha He Zaman, P. Hirushikesan, B. Revanth
+          Domain-Specific Music Programming Language · Six-Phase Architecture & Audio Synthesis
         </p>
       </div>
 

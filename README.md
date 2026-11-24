@@ -1,9 +1,6 @@
 # 🪕 SwaraScript (स्वर लिपि)
 
 > **Design and Implementation of a Domain-Specific Music Programming Language Compiler with Intermediate Event Code Generation, Optimization, and Web-Based Audio Synthesis**  
-> **Course:** COMPILER DESIGN – 1407  
-> **Project Guide:** Dr. C. Anitha  
-> **Authors:** S. Sha He Zaman, P. Hirushikesan, B. Revanth  
 
 ---
 
